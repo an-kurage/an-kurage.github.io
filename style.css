@@ -1,0 +1,114 @@
+@font-face {
+    font-family: k812;
+    src: url(assets/k8x12S.ttf);
+}
+
+@font-face {
+    font-family: zen-r;
+    src: url(assets/ZenKakuGothicNew-Regular.ttf);
+}
+
+@font-face {
+    font-family: zen-m;
+    src: url(assets/ZenKakuGothicNew-Medium.ttf);
+}
+
+body {
+    background-image: linear-gradient(#ffffff00, #b3c5ca 80%), 
+        url("assets/skyday_rev.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-attachment:fixed,fixed;
+    background-position: top, top;
+    background-origin: border-box, border-box;
+    background-size: cover, cover;
+    font-family: "zen-r", sans-serif;
+    margin: 0px;
+
+}
+
+
+
+nav {
+    padding: 10px;
+    text-align: center;
+    color: #ececec;
+    /*background-image: linear-gradient(hsl(0, 0%, 31%) 30%, hsl(0, 0%, 17%));*/
+    background-color: #242424;
+    border-bottom: 2px solid transparent;
+    border-image:radial-gradient(#ffffff 60%, #574d7e) 1;
+    
+}
+
+nav h1 {
+    padding: 0;
+    margin: 0 15px;
+    font-size: 18pt;
+    font-weight: normal;
+    letter-spacing: 0.2rem;
+    text-decoration: none;
+    text-align: left;
+    font-family: k812;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 0;
+    display: inline;
+    margin: 0 15px;
+    font-size: 12pt;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(20px, 1fr) repeat(6, minmax(0, 60px)) minmax(20px,1fr);
+  grid-auto-rows: minmax(50px, auto);
+  grid-gap: 10px;
+  align-items: center;
+}
+
+.centered {
+  grid-column: 2 / -2;
+}
+
+.align-left {
+  grid-column: 1 / -2;
+}
+
+nav a {
+    text-decoration: none;
+    color: #888;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto minmax(300px,0.8fr) auto;
+    grid-auto-rows: minmax(50px, auto);
+    grid-gap: 10px;
+    color: #080808;
+
+}
+
+.conts{
+    grid-column: 2 / -2;
+    background-color: #e6ddee86;
+    margin: 50px 0px;
+    padding: 20px;
+}
+
+main {h1, h2, h3{
+    font-weight: normal;
+    font-family: zen-m;
+    color:black;
+}}
+
+main h1{
+    border-bottom: 2px dashed black;
+}
+
+main h2{
+    border-left: 4px solid #9e679e;
+    padding-left: 15px;
+    margin-bottom: 30px;
+}
