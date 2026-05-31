@@ -1,3 +1,5 @@
+
+
 function burgermenu() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -6,3 +8,11 @@ function burgermenu() {
     x.className = "topnav";
   }
 }
+
+document.addEventListener('click', (event) => {
+  var x = document.getElementById("myTopnav");
+  var b = document.getElementById("myicon");
+  if(!x.contains(event.target) && !b.contains(event.target)) {
+    x.className = "topnav";
+  }
+});
